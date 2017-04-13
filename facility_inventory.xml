@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Facilities>
+    
+    <Facility Name="Seattle">
+        <Name>Seattle</Name>
+        <Inventory>
+            <ID> ABC123 </ID>
+            <Quantity> 45 </Quantity>
+        </Inventory>
+        <Inventory>
+            <ID> JBL3100 </ID>
+            <Quantity> 52 </Quantity>
+        </Inventory>
+        <Inventory>
+            <ID> PL132-C </ID>
+            <Quantity> 54 </Quantity>
+        </Inventory>        
+        <Inventory>
+            <ID> PU238 </ID>
+            <Quantity> 60 </Quantity>
+        </Inventory>        
+        <Rate>8</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Fargo, ND</Name>
+            <Distance>1426</Distance>
+        </Network>
+        <Network>
+            <Name>San Francisco, CA</Name>
+            <Distance>1426</Distance>
+        </Network>
+
+    </Facility>
+    
+        <Facility Name="San Francisco">
+        <Name>San Francisco</Name>
+        <Rate>12</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Seattle, WA</Name>
+            <Distance>808</Distance>
+        </Network>
+        <Network>
+            <Name>San Denver, CO</Name>
+            <Distance>1249</Distance>
+        </Network>
+        <Network>
+            <Name>Los Angeles, CA</Name>
+            <Distance>382</Distance>
+        </Network>
+    </Facility>
+    
+    
+    
+</Facilities>
