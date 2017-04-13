@@ -4,22 +4,6 @@
     
     <Facility Name="Seattle">
         <Name>Seattle</Name>
-        <Inventory>
-            <ID> ABC123 </ID>
-            <Quantity> 45 </Quantity>
-        </Inventory>
-        <Inventory>
-            <ID> JBL3100 </ID>
-            <Quantity> 52 </Quantity>
-        </Inventory>
-        <Inventory>
-            <ID> PL132-C </ID>
-            <Quantity> 54 </Quantity>
-        </Inventory>        
-        <Inventory>
-            <ID> PU238 </ID>
-            <Quantity> 60 </Quantity>
-        </Inventory>        
         <Rate>8</Rate>
         <Cost> 300 </Cost>
         <Network>
