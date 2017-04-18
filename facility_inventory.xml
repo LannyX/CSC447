@@ -16,9 +16,9 @@
         </Network>
 
     </Facility>
-    
-        <Facility Name="San Francisco">
-        <Name>San Francisco</Name>
+
+    <Facility Name="San Francisco">
+        <Name>San Francisco, CA</Name>
         <Rate>12</Rate>
         <Cost> 300 </Cost>
         <Network>
@@ -35,6 +35,318 @@
         </Network>
     </Facility>
     
+    <Facility Name="Los Angeles">
+        <Name>Los Angeles, CA</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>San Francisco, CA</Name>
+            <Distance>382</Distance>
+        </Network>
+        <Network>
+            <Name>Phoenix, AZ </Name>
+            <Distance>372</Distance>
+        </Network>
+    </Facility>
+
     
+    <Facility Name="Phoenix">
+        <Name>Phoenix, AZ </Name>
+        <Rate>8</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Los Angeles, CA</Name>
+            <Distance>372</Distance>
+        </Network>
+        <Network>
+            <Name>Santa Fe, NM </Name>
+            <Distance>480</Distance>
+        </Network>
+    </Facility>
+
+    
+    <Facility Name="Denver">
+        <Name>Denver, CO</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>San Francisco, CA</Name>
+            <Distance>1249</Distance>
+        </Network>
+        <Network>
+            <Name>Santa Fe, NM</Name>
+            <Distance>392</Distance>
+        </Network>
+        <Network>
+            <Name>Fargo, ND</Name>
+            <Distance>889</Distance>
+        </Network>
+        <Network>
+            <Name>St. Louis, MO</Name>
+            <Distance>851</Distance>
+        </Network>
+    </Facility>
+
+    
+    <Facility Name="Santa Fe">
+        <Name>Santa Fe, NM</Name>
+        <Rate>8</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Phoenix, AZ</Name>
+            <Distance>480</Distance>
+        </Network>
+        <Network>
+            <Name>Denver, CO</Name>
+            <Distance>392</Distance>
+        </Network>
+        <Network>
+            <Name>St. Louis, MO</Name>
+            <Distance>1032</Distance>
+        </Network>
+        <Network>
+            <Name>Austin, TX</Name>
+            <Distance>688</Distance>
+        </Network>
+    </Facility>
+
+    
+    <Facility Name="Fargo">
+        <Name>Fargo, ND</Name>
+        <Rate>8</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Seattle, WA </Name>
+            <Distance>1426</Distance>
+        </Network>
+        <Network>
+            <Name>Denver, CO</Name>
+            <Distance>899</Distance>
+        </Network>
+        <Network>
+            <Name>Chicago, IL</Name>
+            <Distance>643</Distance>
+        </Network>
+    </Facility>
+
+    
+    <Facility Name="Austin">
+        <Name>Austin, TX</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Santa Fe, NM </Name>
+            <Distance>688</Distance>
+        </Network>
+        <Network>
+            <Name>St. Louis, MO</Name>
+            <Distance>825</Distance>
+        </Network>
+        <Network>
+            <Name>New Orleans, LA</Name>
+            <Distance>512</Distance>
+        </Network>
+
+    </Facility>
+
+    
+    <Facility Name="St. Louis">
+        <Name>St. Louis, MO</Name>
+        <Rate>12</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Chicago, IL</Name>
+            <Distance>297</Distance>
+        </Network>
+        <Network>
+            <Name>Nashville, TN</Name>
+            <Distance>309</Distance>
+        </Network>
+        <Network>
+            <Name>Austin, TX </Name>
+            <Distance>825</Distance>
+        </Network>
+        <Network>
+            <Name>Santa Fe, NM</Name>
+            <Distance>1032</Distance>
+        </Network>
+        <Network>
+            <Name>Denver, CO</Name>
+            <Distance>851</Distance>
+        </Network>
+    </Facility>
+
+    
+    <Facility Name="Chicago">
+        <Name>Chicago, IL</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Fargo, ND </Name>
+            <Distance>643</Distance>
+        </Network>
+        <Network>
+            <Name>St. Louis, MO</Name>
+            <Distance>297</Distance>
+        </Network>
+        <Network>
+            <Name>New York City, NY</Name>
+            <Distance>790</Distance>
+        </Network>
+        <Network>
+            <Name>Detroit, MI </Name>
+            <Distance>282</Distance>
+        </Network>        
+    </Facility>
+    
+    <Facility Name="New Orleans">
+        <Name>New Orleans, LA</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Austin, TX </Name>
+            <Distance>512</Distance>
+        </Network>
+        <Network>
+            <Name>Nashville, TN</Name>
+            <Distance>532</Distance>
+        </Network>
+        <Network>
+            <Name>Atlanta, GA</Name>
+            <Distance>469</Distance>
+        </Network>
+        <Network>
+            <Name>Miami, FL</Name>
+            <Distance>864</Distance>
+        </Network>
+    </Facility>
+    
+    <Facility Name="Nashville">
+        <Name>Austin, TX</Name>
+        <Rate>8</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>St. Louis, MO </Name>
+            <Distance>309</Distance>
+        </Network>
+        <Network>
+            <Name>New Orleans, LA</Name>
+            <Distance>532</Distance>
+        </Network>
+        <Network>
+            <Name>Norfolk, VA</Name>
+            <Distance>706</Distance>
+        </Network>
+    </Facility>
+    
+    <Facility Name="Detroit">
+        <Name>Detroit, MI</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Chicago, IL </Name>
+            <Distance>282</Distance>
+        </Network>
+        <Network>
+            <Name>New York City, NY</Name>
+            <Distance>614</Distance>
+        </Network>
+        <Network>
+            <Name>Boston, MA </Name>
+            <Distance>719</Distance>
+        </Network>
+    </Facility>
+    
+    <Facility Name="Boston">
+        <Name>Boston, MA</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Detroit, MI </Name>
+            <Distance>719</Distance>
+        </Network>
+        <Network>
+            <Name>New Orleans, LA</Name>
+            <Distance>532</Distance>
+        </Network>
+        <Network>
+            <Name>New York City, NY</Name>
+            <Distance>215</Distance>
+        </Network>
+    </Facility>
+    
+    <Facility Name="New York City">
+        <Name>Austin, TX</Name>
+        <Rate>14</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Boston, MA </Name>
+            <Distance>215</Distance>
+        </Network>
+        <Network>
+            <Name>Detroit, MI</Name>
+            <Distance>614</Distance>
+        </Network>
+        <Network>
+            <Name>Chicago, IL</Name>
+            <Distance>790</Distance>
+        </Network>
+        <Network>
+            <Name>Norfolk, VA</Name>
+            <Distance>363</Distance>
+        </Network>
+    </Facility>
+    
+    <Facility Name="Norfolk">
+        <Name>Norfolk, VA</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>New York City, NY </Name>
+            <Distance>363</Distance>
+        </Network>
+        <Network>
+            <Name>Nashville, TN</Name>
+            <Distance>706</Distance>
+        </Network>
+        <Network>
+            <Name>Atlanta, GA</Name>
+            <Distance>566</Distance>
+        </Network>
+    </Facility>    
+
+    <Facility Name="Atlanta">
+        <Name>Atlanta, GA</Name>
+        <Rate>10</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Norfolk, VA </Name>
+            <Distance>566</Distance>
+        </Network>
+        <Network>
+            <Name>New Orleans, LA</Name>
+            <Distance>469</Distance>
+        </Network>
+        <Network>
+            <Name>Miami, FL</Name>
+            <Distance>663</Distance>
+        </Network>
+    </Facility>    
+
+    <Facility Name="Miami">
+        <Name>Miami, FL</Name>
+        <Rate>12</Rate>
+        <Cost> 300 </Cost>
+        <Network>
+            <Name>Atlanta, GA </Name>
+            <Distance>663</Distance>
+        </Network>
+        <Network>
+            <Name>New Orleans, LA</Name>
+            <Distance>864</Distance>
+        </Network>
+    </Facility>
+
+
     
 </Facilities>
