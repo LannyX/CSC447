@@ -1,5 +1,4 @@
-# CSC447
-Programming Project —— Logistics Application
+# Programming Project —— Logistics Application
 
 Logistics: The process of planning, implementing, and controlling the efficient, effective flow and storage of goods from thepoint of origin to a destinationfor the purpose of conforming to customer requirements.
 
