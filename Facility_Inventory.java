@@ -88,7 +88,7 @@ public class Facility_Inventory {
                 
                 // Get all nodes named "Inventory" - there can be 0 or more
                 ArrayList<String> inventoryDescriptions = new ArrayList<>();
-                NodeList inventoryList = elem.getElementsByTagName("Inventory");
+                NodeList inventoryList = fcltNetwork.getElementsByTagName("Inventory");
                 for (int j = 0; j < inventoryList.getLength(); j++) {
                     if (inventoryList.item(j).getNodeType() == Node.TEXT_NODE) {
                         continue;
@@ -101,9 +101,9 @@ public class Facility_Inventory {
                     }
 
                     // Get some named nodes
-                    elem = (Element) inventoryList.item(j);
-                    String inventoryItemID = elem.getElementsByTagName("ItemID").item(0).getTextContent();
-                    String inventoryQ = elem.getElementsByTagName("Quantity").item(0).getTextContent();
+                    fcltNetwork = (Element) inventoryList.item(j);
+                    String inventoryItemID = fcltNetwork.getElementsByTagName("ItemID").item(0).getTextContent();
+                    String inventoryQ = fcltNetwork.getElementsByTagName("Quantity").item(0).getTextContent();
         
                     System.out.println( inventoryItemID);
                     // Create a string summary of the book
