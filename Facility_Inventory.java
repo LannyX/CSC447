@@ -19,7 +19,7 @@ public class Facility_Inventory {
   public static void main(String[] args) {
 
         try {
-            String fileName = "facility_inventory.xml";
+            String fileName = "facility_network.xml";
 
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
@@ -29,58 +29,62 @@ public class Facility_Inventory {
                 System.err.println("**** XML File '" + fileName + "' cannot be found");
                 System.exit(-1);
             }
-
+            
             Document doc = db.parse(xml);
             doc.getDocumentElement().normalize();
 
-            NodeList facilityEntries = doc.getDocumentElement().getChildNodes();
+            NodeList fcltNetworkEntries = doc.getDocumentElement().getChildNodes();
 
-            for (int i = 0; i < facilityEntries.getLength(); i++) {
-                if (facilityEntries.item(i).getNodeType() == Node.TEXT_NODE) {
+            for (int i = 0; i < fcltNetworkEntries.getLength(); i++) {
+                if (fcltNetworkEntries.item(i).getNodeType() == Node.TEXT_NODE) {
                     continue;
                 }
                 
-                String entryName = facilityEntries.item(i).getNodeName();
+                String entryName = fcltNetworkEntries.item(i).getNodeName();
                 if (!entryName.equals("Facility")) {
                     System.err.println("Unexpected node found: " + entryName);
                     return;
                 }
                 
                 // Get a node attribute
-                NamedNodeMap aMap = facilityEntries.item(i).getAttributes();
-                String storeId = aMap.getNamedItem("Name").getNodeValue();
+                NamedNodeMap fcltNetworkMap = fcltNetworkEntries.item(i).getAttributes();
+                String fcltId = fcltNetworkMap.getNamedItem("Id").getNodeValue();
 
-                // Get a named nodes
-                Element elem = (Element) facilityEntries.item(i);
-                String fname = elem.getElementsByTagName("Name").item(0).getTextContent();
-                String rateperd = elem.getElementsByTagName("Rate").item(0).getTextContent();
-                String costpert = elem.getElementsByTagName("Cost").item(0).getTextContent();
-
+                // Get information of a node 
+                Element fcltNetwork = (Element) fcltNetworkEntries.item(i);
+                String fcltName = fcltNetwork.getElementsByTagName("Name").item(0).getTextContent();
+                String fcltRate = fcltNetwork.getElementsByTagName("Rate").item(0).getTextContent();
+                String fcltCost = fcltNetwork.getElementsByTagName("Cost").item(0).getTextContent();
                 
-                // Get all nodes named "Network" - there can be 0 or more
-                ArrayList<String> networkDescriptions = new ArrayList<>();
-                NodeList networkList = elem.getElementsByTagName("Network");
-                for (int j = 0; j < networkList.getLength(); j++) {
-                    if (networkList.item(j).getNodeType() == Node.TEXT_NODE) {
+                // Get Links - there can be 0 or more
+                ArrayList<String> linksDescriptions = new ArrayList<>();
+                NodeList linksList = fcltNetwork.getElementsByTagName("Link");
+                for (int j = 0; j < linksList.getLength(); j++) {
+                    if (linksList.item(j).getNodeType() == Node.TEXT_NODE) {
                         continue;
                     }
 
-                    entryName = networkList.item(j).getNodeName();
-                    if (!entryName.equals("Network")) {
+                    entryName = linksList.item(j).getNodeName();
+                    if (!entryName.equals("Link")) {
                         System.err.println("Unexpected node found: " + entryName);
                         return;
                     }
 
                     // Get some named nodes
-                    elem = (Element) networkList.item(j);
-                    String placeName = elem.getElementsByTagName("Name").item(0).getTextContent();
-                    String Distance = elem.getElementsByTagName("Distance").item(0).getTextContent();
-                   // String bookDate = elem.getElementsByTagName("Date").item(0).getTextContent();
-                    //String bookIsbn13 = elem.getElementsByTagName("ISBN13").item(0).getTextContent();
+                    fcltNetwork = (Element) linksList.item(j);
+                    String neighborName = fcltNetwork.getElementsByTagName("Name").item(0).getTextContent();
+                    String neighborDist = fcltNetwork.getElementsByTagName("Distance").item(0).getTextContent();
+                    
                     // Create a string summary of the book
-                    networkDescriptions.add(placeName + " is " + Distance + " miles away" );
+                    linksDescriptions.add(neighborName + " is " + neighborDist + " miles away" );
                     //+ bookDate + " [" + bookIsbn13 + "]");
                 }
+                
+                
+                
+                
+                
+                
                 
                 // Get all nodes named "Inventory" - there can be 0 or more
                 ArrayList<String> inventoryDescriptions = new ArrayList<>();
@@ -98,18 +102,19 @@ public class Facility_Inventory {
 
                     // Get some named nodes
                     elem = (Element) inventoryList.item(j);
-                    String inventoryID = elem.getElementsByTagName("ID").item(0).getTextContent();
+                    String inventoryItemID = elem.getElementsByTagName("ItemID").item(0).getTextContent();
                     String inventoryQ = elem.getElementsByTagName("Quantity").item(0).getTextContent();
         
-                    System.out.println( inventoryID);
+                    System.out.println( inventoryItemID);
                     // Create a string summary of the book
-                    inventoryDescriptions.add("InventoryID: " + inventoryID + " Quantity: " + inventoryQ + ". " );
+                    inventoryDescriptions.add("InventoryItemID: " + inventoryItemID + " Quantity: " + inventoryQ + ". " );
                     //+ bookDate + " [" + bookIsbn13 + "]");
                 }
 
+                
+                
                 // Here I would create a Store object using the data I just loaded from the XML
-                System.out.println("Facility name: "+ fname +" [Rate /day:" + rateperd + " Cost: $" + costpert + "] \n" + networkDescriptions +"\n" + inventoryDescriptions + "\n");
-                //+ storeAddress + "\n" + bookDescriptions + "\n");
+                System.out.println("Facility name: "+ fcltName +" [Rate /day:" + fcltRate + " Cost: $" + fcltCost + "] \n" + linksDescriptions +"\n" + inventoryDescriptions + "\n");
                 
             }
 
