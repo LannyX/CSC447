@@ -3,325 +3,325 @@
 
 <FacilitiesInventory>
     
-    <Facility ID="201">
+    <Facility Id="201">
         <Name>Seattle, WA</Name>
         <Inventory>
-            <ID>ABC123</ID>
+            <ItemID>ABC123</ItemID>
             <Quantity>45</Quantity>
         </Inventory>
         <Inventory>
-            <ID>JBL3100</ID>
+            <ItemID>JBL3100</ItemID>
             <Quantity>52</Quantity>
         </Inventory>
         <Inventory>
-            <ID>PL132-C</ID>
+            <ItemID>PL132-C</ItemID>
             <Quantity>54</Quantity>
         </Inventory>        
         <Inventory>
-            <ID>PU238</ID>
+            <ItemID>PU238</ItemID>
             <Quantity>60</Quantity>
         </Inventory>
     </Facility>
     
-    <Facility ID="202">
+    <Facility Id="202">
         <Name>San Francisco, CA</Name>
         <Inventory>
-            <ID>RL123A</ID>
+            <ItemID>RL123A</ItemID>
             <Quantity>40</Quantity>
         </Inventory>
         <Inventory>
-            <ID>XLK200B</ID>
+            <ItemID>XLK200B</ItemID>
             <Quantity>8</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SR71-D</ID>
+            <ItemID>SR71-D</ItemID>
             <Quantity>81</Quantity>
         </Inventory>        
         <Inventory>
-            <ID>CT1928</ID>
+            <ItemID>CT1928</ItemID>
             <Quantity>46</Quantity>
         </Inventory>
     </Facility>
 
-    <Facility ID="203">
+    <Facility Id="203">
         <Name>Los Angeles, CA</Name>
         <Inventory>
-            <ID>RX100-3</ID>
+            <ItemID>RX100-3</ItemID>
             <Quantity>57</Quantity>
         </Inventory>
         <Inventory>
-            <ID>JBL3100</ID>
+            <ItemID>JBL3100</ItemID>
             <Quantity>60</Quantity>
         </Inventory>
         <Inventory>
-            <ID>E241i</ID>
+            <ItemID>E241i</ItemID>
             <Quantity>44</Quantity>
         </Inventory>        
         <Inventory>
-            <ID>XTP202</ID>
+            <ItemID>XTP202</ItemID>
             <Quantity>32</Quantity>
         </Inventory>
     </Facility>    
 
-    <Facility ID="204">
+    <Facility Id="204">
         <Name>Phoenix, AZ</Name>
         <Inventory>
-            <ID>RX100-3</ID>
+            <ItemID>RX100-3</ItemID>
             <Quantity>18</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SR71-D</ID>
+            <ItemID>SR71-D</ItemID>
             <Quantity>55</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SN-241-L</ID>
+            <ItemID>SN-241-L</ItemID>
             <Quantity>22</Quantity>
         </Inventory>        
         <Inventory>
-            <ID>ZTF109</ID>
+            <ItemID>ZTF109</ItemID>
             <Quantity>54</Quantity>
         </Inventory>
     </Facility>     
 
-    <Facility ID="205">
+    <Facility Id="205">
         <Name>Denver, CO</Name>
         <Inventory>
-            <ID>ABC123</ID>
+            <ItemID>ABC123</ItemID>
             <Quantity>80</Quantity>
         </Inventory>
         <Inventory>
-            <ID>RL123A</ID>
+            <ItemID>RL123A</ItemID>
             <Quantity>110</Quantity>
         </Inventory>
         <Inventory>
-            <ID>RTF110</ID>
+            <ItemID>RTF110</ItemID>
             <Quantity>100</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="206">
+    <Facility Id="206">
         <Name>Santa Fe, NM</Name>
         <Inventory>
-            <ID>RX100-3</ID>
+            <ItemID>RX100-3</ItemID>
             <Quantity>144</Quantity>
         </Inventory>
         <Inventory>
-            <ID>CR2032</ID>
+            <ItemID>CR2032</ItemID>
             <Quantity>280</Quantity>
         </Inventory>
     </Facility>  
 
-    <Facility ID="207">
+    <Facility Id="207">
         <Name>Fargo, ND</Name>
         <Inventory>
-            <ID>ABC123</ID>
+            <ItemID>ABC123</ItemID>
             <Quantity>25</Quantity>
         </Inventory>
         <Inventory>
-            <ID>JBL3100</ID>
+            <ItemID>JBL3100</ItemID>
             <Quantity>32</Quantity>
         </Inventory>
         <Inventory>
-            <ID>XLK200B</ID>
+            <ItemID>XLK200B</ItemID>
             <Quantity>82</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="208">
+    <Facility Id="208">
         <Name>Austin, TX</Name>
         <Inventory>
-            <ID>RL123A</ID>
+            <ItemID>RL123A</ItemID>
             <Quantity>66</Quantity>
         </Inventory>
         <Inventory>
-            <ID>RX100-3</ID>
+            <ItemID>RX100-3</ItemID>
             <Quantity>35</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SN-241-L</ID>
+            <ItemID>SN-241-L</ItemID>
             <Quantity>35</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="209">
+    <Facility Id="209">
         <Name>St. Louis, MO</Name>
         <Inventory>
-            <ID>ABC123</ID>
+            <ItemID>ABC123</ItemID>
             <Quantity>70</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SR71-D</ID>
+            <ItemID>SR71-D</ItemID>
             <Quantity>45</Quantity>
         </Inventory>
         <Inventory>
-            <ID>PU238</ID>
+            <ItemID>PU238</ItemID>
             <Quantity>82</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="210">
+    <Facility Id="210">
         <Name>Chicago, IL</Name>
         <Inventory>
-            <ID>ABC123</ID>
+            <ItemID>ABC123</ItemID>
             <Quantity>60</Quantity>
         </Inventory>
         <Inventory>
-            <ID>E241i</ID>
+            <ItemID>E241i</ItemID>
             <Quantity>64</Quantity>
         </Inventory>
         <Inventory>
-            <ID>CT1928</ID>
+            <ItemID>CT1928</ItemID>
             <Quantity>20</Quantity>
         </Inventory>
         <Inventory>
-            <ID>RTF110</ID>
+            <ItemID>RTF110</ItemID>
             <Quantity>110</Quantity>
         </Inventory>          <Inventory>
-            <ID>XTP202</ID>
+            <ItemID>XTP202</ItemID>
             <Quantity>20</Quantity>
         </Inventory>                  
     </Facility>  
 
-    <Facility ID="211">
+    <Facility Id="211">
         <Name>New Orleans, LA</Name>
         <Inventory>
-            <ID>MM35P</ID>
+            <ItemID>MM35P</ItemID>
             <Quantity>100</Quantity>
         </Inventory>
         <Inventory>
-            <ID>PU238</ID>
+            <ItemID>PU238</ItemID>
             <Quantity>49</Quantity>
         </Inventory>
         <Inventory>
-            <ID>ZTF109</ID>
+            <ItemID>ZTF109</ItemID>
             <Quantity>120</Quantity>
         </Inventory>        
     </Facility>
 
-    <Facility ID="212">
+    <Facility Id="212">
         <Name>Nashville, TN</Name>
         <Inventory>
-            <ID>RX100-3</ID>
+            <ItemID>RX100-3</ItemID>
             <Quantity>78</Quantity>
         </Inventory>
         <Inventory>
-            <ID>XLK200B</ID>
+            <ItemID>XLK200B</ItemID>
             <Quantity>250</Quantity>
         </Inventory>
         <Inventory>
-            <ID>CR2032</ID>
+            <ItemID>CR2032</ItemID>
             <Quantity>366</Quantity>
         </Inventory>    
         <Inventory>
-            <ID>SN-241-L</ID>
+            <ItemID>SN-241-L</ItemID>
             <Quantity>16</Quantity>
         </Inventory>             
     </Facility>
 
-    <Facility ID="213">
+    <Facility Id="213">
         <Name>Detroit, MI</Name>
         <Inventory>
-            <ID>JBL3100</ID>
+            <ItemID>JBL3100</ItemID>
             <Quantity>117</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SR71-D</ID>
+            <ItemID>SR71-D</ItemID>
             <Quantity>8</Quantity>
         </Inventory>
         <Inventory>
-            <ID>CT1928</ID>
+            <ItemID>CT1928</ItemID>
             <Quantity>72</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="214">
+    <Facility Id="214">
         <Name>Boston, MA</Name>
         <Inventory>
-            <ID>MM35P</ID>
+            <ItemID>MM35P</ItemID>
             <Quantity>47</Quantity>
         </Inventory>
         <Inventory>
-            <ID>PL132-C</ID>
+            <ItemID>PL132-C</ItemID>
             <Quantity>83</Quantity>
         </Inventory>
         <Inventory>
-            <ID>CT1928</ID>
+            <ItemID>CT1928</ItemID>
             <Quantity>65</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="215">
+    <Facility Id="215">
         <Name>New York City, NY</Name>
         <Inventory>
-            <ID>RL123A</ID>
+            <ItemID>RL123A</ItemID>
             <Quantity>12</Quantity>
         </Inventory>
         <Inventory>
-            <ID>CR2032</ID>
+            <ItemID>CR2032</ItemID>
             <Quantity>132</Quantity>
         </Inventory>
         <Inventory>
-            <ID>E241i</ID>
+            <ItemID>E241i</ItemID>
             <Quantity>72</Quantity>
         </Inventory> 
         <Inventory>
-            <ID>ZTF109</ID>
+            <ItemID>ZTF109</ItemID>
             <Quantity>28</Quantity>
         </Inventory>    
     </Facility>  
 
-    <Facility ID="216">
+    <Facility Id="216">
         <Name>Norfolk, VA</Name>
         <Inventory>
-            <ID>MM35P</ID>
+            <ItemID>MM35P</ItemID>
             <Quantity>66</Quantity>
         </Inventory>
         <Inventory>
-            <ID>RL123A</ID>
+            <ItemID>RL123A</ItemID>
             <Quantity>50</Quantity>
         </Inventory>
         <Inventory>
-            <ID>XLK200B</ID>
+            <ItemID>XLK200B</ItemID>
             <Quantity>14</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="217">
+    <Facility Id="217">
         <Name>Atlanta, GA</Name>
         <Inventory>
-            <ID>RX100-3</ID>
+            <ItemID>RX100-3</ItemID>
             <Quantity>90</Quantity>
         </Inventory>
         <Inventory>
-            <ID>E241i</ID>
+            <ItemID>E241i</ItemID>
             <Quantity>32</Quantity>
         </Inventory>
         <Inventory>
-            <ID>PU238</ID>
+            <ItemID>PU238</ItemID>
             <Quantity>120</Quantity>
         </Inventory>        
     </Facility>  
 
-    <Facility ID="218">
+    <Facility Id="218">
         <Name>Miami, FL</Name>
         <Inventory>
-            <ID>MM35P</ID>
+            <ItemID>MM35P</ItemID>
             <Quantity>16</Quantity>
         </Inventory>
         <Inventory>
-            <ID>JBL3100</ID>
+            <ItemID>JBL3100</ItemID>
             <Quantity>44</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SR71-D</ID>
+            <ItemID>SR71-D</ItemID>
             <Quantity>15</Quantity>
         </Inventory>
         <Inventory>
-            <ID>SN-241-L</ID>
+            <ItemID>SN-241-L</ItemID>
             <Quantity>28</Quantity>
         </Inventory>
         <Inventory>
-            <ID>XTP202</ID>
+            <ItemID>XTP202</ItemID>
             <Quantity>88</Quantity>
         </Inventory>                        
     </Facility>  
