@@ -19,6 +19,7 @@ public class Facility_Inventory {
   public static void main(String[] args) {
 
         try {
+            //Reader
             String fileName = "facility_network.xml";
 
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
