@@ -107,7 +107,9 @@ public class Facility_loader {
                     //+ bookDate + " [" + bookIsbn13 + "]");
                 }
 
-                Facility facility = Facility.loadFacility(fcltName, fcltRate, fcltcost);
+                Facility facility = FacilityImplFactory.loadFacility(fcltName, fcltRate, fcltCost);
+                
+                System.out.println(facility.getfcltName() + facility.getfcltRate()+ facility.getfcltCost());
                 
                 // Here I would create a Store object using the data I just loaded from the XML
                 System.out.println("Facility name: "+ fcltName +" [Rate /day:" + fcltRate + " Cost: $" + fcltCost + "] \n" + linksDescriptions +"\n" + inventoryDescriptions + "\n");
@@ -119,69 +121,53 @@ public class Facility_loader {
         }
     }
   
-  public interface Facility{
-	  
-	  String getfcltName();
-	  
-	  String setfcltName(String name);
-	  
-	  int getfcltRate();
-	  
-	  int setfcltRate(String rate);
-	  
-	  int getfcltCost();
-	  
-	  int setfcltCost(String cost);
-  }
+  public interface Facility {
+
+    public String getfcltName();
+          
+    public int getfcltRate();
+      
+    public int getfcltCost();
+        
+}
+
   
-  public class FacilityImplFactory{
-	  public static Facility loadFacility(String fcltName, int fcltRate, int fcltCost){
-		  return new FacilityImpl(fcltName, fcltRate, fcltCost);
-	  }
-  }
+  public class FacilityImplFactory {
+      public static Facility loadFacility(String fcltName, String fcltRate, String fcltCost){
+          return new FacilityImpl(fcltName, fcltRate, fcltCost);
+      }
+}
+
   
   public class FacilityImpl implements Facility{
-	  private String fcltName;
-	  private int fcltRate;
-	  private int fcltCost;
+      private String fcltName;
+      private String fcltRate;
+      private String fcltCost;
 
-	  public FacilityImpl(String fcltName, int fcltRate, int fcltCost){
-		  this.fcltName = fcltName;
-		  this.fcltRate = fcltRate;
-		  this.fcltCost = fcltCost;
-	  }
+      public FacilityImpl(String fcltName, String fcltRate, String fcltCost){
+          this.fcltName = fcltName;
+          this.fcltRate = fcltRate;
+          this.fcltCost = fcltCost;
+      }
 
-		@Override
-		public String getfcltName() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public String setfcltName(String name) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public int getfcltRate() {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-		@Override
-		public int setfcltRate(String rate) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-		@Override
-		public int getfcltCost() {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-		@Override
-		public int setfcltCost(String cost) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
+        @Override
+        public String getfcltName() {
+            // TODO Auto-generated method stub
+            return null;
+        }
 
-  }
+        @Override
+        public int getfcltRate() {
+            // TODO Auto-generated method stub
+            return 0;
+        }
+
+        @Override
+        public int getfcltCost() {
+            // TODO Auto-generated method stub
+            return 0;
+        }
+
+    }
     
 }
