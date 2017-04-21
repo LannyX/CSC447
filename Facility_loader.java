@@ -59,6 +59,8 @@ public class Facility_loader {
                 String fcltRate = fcltNetwork.getElementsByTagName("Rate").item(0).getTextContent();
                 String fcltCost = fcltNetwork.getElementsByTagName("Cost").item(0).getTextContent();
                 
+                int fcltRateint = Integer.parseInt(fcltRate);
+                int fcltCostint = Integer.parseInt(fcltCost);
                 // Get Links - there can be 0 or more
                 ArrayList<String> linksDescriptions = new ArrayList<>();
                 NodeList linksList = fcltNetwork.getElementsByTagName("Link");
@@ -107,12 +109,11 @@ public class Facility_loader {
                     //+ bookDate + " [" + bookIsbn13 + "]");
                 }
 
-                Facility facility = FacilityImplFactory.loadFacility(fcltName, fcltRate, fcltCost);
+                Facility facility = FacilityImplFactory.loadFacility(fcltName, fcltRateint, fcltCostint);
                 
                 System.out.println(facility.getfcltName() + facility.getfcltRate()+ facility.getfcltCost());
-                
                 // Here I would create a Store object using the data I just loaded from the XML
-                System.out.println("Facility name: "+ fcltName +" [Rate /day:" + fcltRate + " Cost: $" + fcltCost + "] \n" + linksDescriptions +"\n" + inventoryDescriptions + "\n");
+                //System.out.println("Facility name: "+ fcltName +" [Rate /day:" + fcltRate + " Cost: $" + fcltCost + "] \n" + linksDescriptions +"\n" + inventoryDescriptions + "\n");
                 
             }
 
@@ -120,54 +121,6 @@ public class Facility_loader {
             e.printStackTrace();
         }
     }
-  
-  public interface Facility {
 
-    public String getfcltName();
-          
-    public int getfcltRate();
-      
-    public int getfcltCost();
-        
-}
-
-  
-  public class FacilityImplFactory {
-      public static Facility loadFacility(String fcltName, String fcltRate, String fcltCost){
-          return new FacilityImpl(fcltName, fcltRate, fcltCost);
-      }
-}
-
-  
-  public class FacilityImpl implements Facility{
-      private String fcltName;
-      private String fcltRate;
-      private String fcltCost;
-
-      public FacilityImpl(String fcltName, String fcltRate, String fcltCost){
-          this.fcltName = fcltName;
-          this.fcltRate = fcltRate;
-          this.fcltCost = fcltCost;
-      }
-
-        @Override
-        public String getfcltName() {
-            // TODO Auto-generated method stub
-            return null;
-        }
-
-        @Override
-        public int getfcltRate() {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-
-        @Override
-        public int getfcltCost() {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-
-    }
     
 }
